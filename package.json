@@ -1,0 +1,29 @@
+{
+  "name": "cookies_clicker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thoms-code/cookies_clicker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thoms-code/cookies_clicker/issues"
+  },
+  "homepage": "https://github.com/Thoms-code/cookies_clicker#readme",
+  "devDependencies": {
+    "sass": "^1.57.1",
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3"
+  }
+}
