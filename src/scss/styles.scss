@@ -1,3 +1,38 @@
+<<<<<<< HEAD
 .label{
     color: red;
+=======
+// IMPORT
+
+// Font Awesome
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&family=Rowdies&display=swap');
+
+// VARIABLES
+// Fonts
+$noto: 'Noto Sans', sans-serif;
+$poppins: 'Poppins', sans-serif;
+$rowdies: 'Rowdies', cursive;
+
+// SCSS
+
+// Body
+
+* {
+  box-sizing: border-box;
+
+}
+body {
+  display: flex;
+  margin: 0;
+  background-color: #264653;
+  justify-content: center;
+  h1 {
+    color: #e9c46a;
+    font-family: $rowdies;
+    font-size: 5rem;
+  }
+>>>>>>> main
 }
