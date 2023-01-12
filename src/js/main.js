@@ -1,49 +1,56 @@
+let score = 0;
+let cpt = 0;
+let valx2 = 1;
+let valx5 = 1;
+let valx10 = 1;
+let auto = 0;
+let bonus = 1;
+let btn;
 
-function increment(cpt){
-    return cpt = cpt+1;
-}
-let compteur=0;
-console.log(increment(compteur));
+document.getElementById("button-cookie").addEventListener("click",()=>{
+  cpt = cpt + 1;
+  score = cpt;
+});
+
 /////////////////////////////////////////////
 
-function multi2(valP2){
-    return valP2 = valP2 * 2;
-}
+document.getElementById("button-x2").addEventListener("click",()=>{
+  if( score >= 20){
+  valx2 = valx2 * 2;
+  }
+  score += valx2;
+});
 
-let valeurPar2=1;
-console.log(multi2(valeurPar2));
 ////////////////////////////////////////////////
 
-function multi5(valP5){
-    return valP5 = valP5 * 5;
-}
+document.getElementById("button-x5").addEventListener("click",()=>{
+ if( score >= 150){
+ valx5 = valx5 * 5;
+ }
+ score += valx5
+});
 
-let valeurPar5=1;
-console.log(multi5(valeurPar5));
+
 ////////////////////////////////////////////////
 
-<html>
-<head>
-	<script type="text/javascript">
-		var i=0;
-		function augmenter() {
-			i++;
-			document.getElementById("timer").innerHTML = i;
-		}
-		setInterval("augmenter()", 1000);
-	</script>
-</head>
-<body>
- 
-<p id="timer">0</p>
- 
-</body>
-</html>
+document.getElementById("button-x10").addEventListener("click",()=>{
+ if( score >= 500){
+ valx10 = valx10 * 10;
+ }
+  score += valx10;
+   });
+//////////////////////////////////////////////////
+
+document.getElementById("button-autoclicker").addEventListener("click",()=>{
+
+   // document.getElementById("timer").innerHTML = i;
+	 setInterval("augmenter()", 1000);
+     score += auto; 
+
+});
 //////////////////////////////////////////////////////
-
-function bonus(){
-    
-}
+btn = document.getElementById("button-bonus");
+btn.addEventListener("click",bonus);
 
 /////////////////////////////////////////////////////
 /*<html>
@@ -64,4 +71,13 @@ function stateHandle() {
 }
 
 import "../scss/styles.scss";
+
+////////////////////////////////////////////////////////////
+function augmenter() {
+    auto = auto + 1;	
+}
+
+function bonus(){
+    setTimeout((score = score*3), 0000);
+}
 
