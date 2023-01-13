@@ -12,6 +12,13 @@
     - backend: 1 or 2
     - project management : 1
 
+## Changelog
+ > v0.0.1
+> - Add git flow
+> 
+> v0.0.2
+> - Resolve conflict in bootstrap
+
 ## Mission objectives
 
 At the end of this challenge you should have improved your:

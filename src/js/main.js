@@ -5,6 +5,11 @@ let valx5 = 1;
 let valx10 = 1;
 let auto = 0;
 let btn;
+// Import our custom CSS
+import '../scss/styles.scss'
+
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
 
 
 document.getElementById("button-cookie").addEventListener("click",()=>{
