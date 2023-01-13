@@ -1,5 +1,8 @@
 // IMPORT
 
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 // Font Awesome
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -24,7 +27,6 @@ body {
   display: flex;
   margin: 0 auto;
   background-color: #264653;
-  justify-content: center;
   h1 {
     color: #e9c46a;
     font-family: $rowdies;
