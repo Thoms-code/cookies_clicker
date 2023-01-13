@@ -1,3 +1,6 @@
+// Import our custom CSS
+import '../scss/styles.scss'
+
 let score = 0;
 let cpt = 0;
 let valx2 = 1;
@@ -5,8 +8,6 @@ let valx5 = 1;
 let valx10 = 1;
 let auto = 0;
 let btn;
-// Import our custom CSS
-import '../scss/styles.scss'
 
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
@@ -78,8 +79,3 @@ document.getElementById("score").value=score;
 function bonus(){
     setInterval((score = score*3), 1000);
 }
-
-
-
-
-import "../scss/styles.scss";
