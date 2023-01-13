@@ -12,6 +12,10 @@
     - backend: 1 or 2
     - project management : 1
 
+## Changelog
+ > v0.0.1
+> - Add git flow
+
 ## Mission objectives
 
 At the end of this challenge you should have improved your:
