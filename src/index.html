@@ -3,12 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="./scss/styles.scss">
     <title>Cookies Clicker</title>
 </head>
 <body>
-    <div class="container py-4 px-3 mx-auto">
-        <h1>Cookies clicker!</h1>
+    <main class="container col-6 bg-danger py-4 px-3 mx-auto">
+        <h1 class="text-light">Cookies clicker!</h1>
+        <section class="left_container">
+
+        </section>
+        <section class="main_container">
+
+        </section>
+        <section class="right_container">
+
+        </section>
         <button id="button-autoclicker"><i class="fa-solid fa-arrow-pointer"></i></button>
         <label for="autoclicker"></label><input type="text" id="autoclicker" name="autoclicker">
         <button id="button-cookie" style="background: url(img/cookie.png)"><img src="img/cookie.png" alt="Image d'un cookie" width="250" height="250"></button> <label for="button-cookie">Nombre de cookie</label>
@@ -21,7 +31,7 @@
         <label for="x10"></label><input type="text" name="x10" id="x10">
         <button id="button-bonus">bonus</button>
         <label for="bonus"></label><input type="text" name="bonus" id="bonus">
-    </div>
+    </main>
 
     <script type="module" src="./js/main.js"></script>
 </body>
