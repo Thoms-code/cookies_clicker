@@ -8,6 +8,7 @@ import '../scss/styles.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
+
  
 document.getElementById("button-x2").disabled = true;
 document.getElementById("button-x5").disabled = true;
@@ -26,6 +27,7 @@ document.getElementById("button-cookie").addEventListener("click",()=>{
 
 /////////////////////////////////////////////
 
+
 document.getElementById("button-x2").addEventListener("click",()=>{ 
     cpt = cpt + 2;
     document.getElementById("autoclicker").value=cpt;
@@ -38,6 +40,7 @@ document.getElementById("button-x2").addEventListener("click",()=>{
 ////////////////////////////////////////////////
 
 document.getElementById("button-x5").addEventListener("click",()=>{
+
  cpt = cpt + 5;
  
  
@@ -46,12 +49,21 @@ document.getElementById("button-x5").addEventListener("click",()=>{
   //document.getElementById("score").value=score;
   if(cpt>=200){document.getElementById("button-x10").disabled = false; 
    cpt = cpt - 50;}
+ if( score >= 200){
+ valx5 = valx5 * 5;
+ }
+ score += valx5
+ document.getElementById("x5").value=valx5;
+  document.getElementById("score").value=score;
+  if(score>=10000){document.getElementById("button-x5").disabled = true; score = score - 5000;}
+
 });
 
 
 ////////////////////////////////////////////////
 
 document.getElementById("button-x10").addEventListener("click",()=>{
+
  
   cpt = cpt + 10;
  
@@ -64,16 +76,17 @@ document.getElementById("button-x10").addEventListener("click",()=>{
 
 document.getElementById("button-autoclicker").addEventListener("click",()=>{
 
+
   setInterval(function(){;
            cpt = cpt +1 ;
           document.getElementById("autoclicker").value = cpt;
          
         },1000);
-
 });
 //////////////////////////////////////////////////////
 btn = document.getElementById("button-bonus");
 btn.addEventListener("click",bonus());
+
 document.getElementById("autoclicker").value=cpt;
 
 function bonus(){
