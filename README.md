@@ -15,6 +15,9 @@
 ## Changelog
  > v0.0.1
 > - Add git flow
+> 
+> v0.0.2
+> - Resolve conflict in bootstrap
 
 ## Mission objectives
 
