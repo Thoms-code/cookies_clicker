@@ -143,6 +143,7 @@ This game allows you to collect cookies. Each click grants you a cookie. You can
 Why not ? I mean everybody loves cookies. It was our teams goal to end world's hunger by giving away cookies. Since we currently dont posses the financial resources to distribute cookies around the world, we aimed for a more realistic goal : Giving away numerical cookies online.
 The whole humanity consciousness will soon be uploaded online, so you might as well start collecting our delicious online cookies.
 
+
 ### It's amazing! How did you do it ?
 We mainly used HTML to display the elements of this page. CSS was handled by bootstrap to make sure each element is displayed  where we wanted it to be displayed.JavaScript allowed back-end calculation and tracking of the cookies given. Since we chose to use bootstrap , we had to use a tool compatible with bootstrap to set up our local host. Vite was the answer! We had a few issues setting it up, but when it was set up it worked like a charm.
 
