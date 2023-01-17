@@ -1,3 +1,7 @@
+let score = 0;
+let cpt = 0;
+let auto = 0;
+let btn;
 // Import our custom CSS
 import '../scss/styles.scss'
 
