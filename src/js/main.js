@@ -73,7 +73,6 @@ buttonX5.addEventListener("click", () => {multiplier = 5; cpt -= priceX5; cart +
 buttonX10.addEventListener("click", () => {multiplier = 10; cpt -= priceX10; cart += priceX10});
 
 
-
 // fonction bonus x200
 buttonBonus.addEventListener("click", () => {
     let count = 30;
@@ -123,6 +122,7 @@ const unBlockMultiplier = ()=> {
 
 // X2
 buttonX2.addEventListener('mouseover', () => {
+
     infoPrice.classList.remove("d-none");
     infoPrice.classList.add("text-center");
     infoPrice.innerHTML = `<h3>Prix ${priceX2} 🍪</h3><br/>
@@ -130,6 +130,7 @@ buttonX2.addEventListener('mouseover', () => {
 })
 buttonX2.addEventListener('mouseout', () => {
     infoPrice.classList.add("d-none");
+
 })
 
 // x5
