@@ -1,7 +1,3 @@
-let score = 0;
-let cpt = 0;
-let auto = 0;
-let btn;
 // Import our custom CSS
 import '../scss/styles.scss'
 
@@ -29,6 +25,8 @@ let printCpt = document.querySelector("#print-cpt");
 let infoBox = document.querySelector("#info_box");
 let spanBoxWin = document.querySelector("#print-box-win");
 let spanBoxLoose = document.querySelector("#print-box-loose");
+// box prix
+let infoPrice = document.querySelector("#info_price");
 
 // Bouton image cookie (+1 a chaque clic)
 let buttonCookie = document.querySelector("#button-cookie");
@@ -78,6 +76,7 @@ buttonX10.addEventListener("click", () => {multiplier = 10; cpt -= priceX10; car
 // fonction bonus x200
 buttonBonus.addEventListener("click", () => {
     let count = 30;
+    cart += priceBonus;
     const intervalId = setInterval(() => {
         count--;
         if (count <= 0) {
@@ -123,100 +122,57 @@ const unBlockMultiplier = ()=> {
 
 // X2
 buttonX2.addEventListener('mouseover', () => {
-    infoBox.classList.add("text-center")
-    infoBox.innerHTML = `<h1>Prix ${priceX2} 🍪</h1><br/>
-                          <h3>Multiplie par 2 chaque cookie recuperé</h3>`;
 
+    infoPrice.classList.remove("d-none");
+    infoPrice.classList.add("text-center");
+    infoPrice.innerHTML = `<h3>Prix ${priceX2} 🍪</h3><br/>
+                          <h5>Multiplie par 2 chaque cookie recuperé</h5>`;
 })
 buttonX2.addEventListener('mouseout', () => {
-    infoBox.classList.remove('text-center');
-    infoBox.innerHTML = `<span>
-                Statistique :
-            </span> <br/>
-            <span>
-                Total des cookies gagnés: <span id="print-box-win">0</span>
-            </span> <br/>
-            <span>
-                Total des cookies dépensés: <span id="print-box-loose">0</span>
-            </span> <br/>`;
+    infoPrice.classList.add("d-none");
+
 })
 
 // x5
 buttonX5.addEventListener('mouseover', () => {
-    infoBox.classList.add("text-center")
-    infoBox.innerHTML = `<h1>Prix ${priceX5} 🍪</h1><br/>
-                          <h3>Multiplie par 5 chaque cookie recuperé</h3>`;
-
+    infoPrice.classList.remove("d-none");
+    infoPrice.classList.add("text-center");
+    infoPrice.innerHTML = `<h3>Prix ${priceX5} 🍪</h3><br/>
+                          <h5>Multiplie par 5 chaque cookie recuperé</h5>`;
 })
 buttonX5.addEventListener('mouseout', () => {
-    infoBox.classList.remove('text-center');
-    infoBox.innerHTML = `<span>
-                Statistique :
-            </span> <br/>
-            <span>
-                Total des cookies gagnés: <span id="print-box-win">0</span>
-            </span> <br/>
-            <span>
-                Total des cookies dépensés: <span id="print-box-loose">0</span>
-            </span> <br/>`;
+    infoPrice.classList.add("d-none");
 })
-
 //x10
 buttonX10.addEventListener('mouseover', () => {
-    infoBox.classList.add("text-center")
-    infoBox.innerHTML = `<h1>Prix ${priceX10} 🍪</h1><br/>
-                          <h3>Multiplie par 10 chaque cookie recuperé</h3>`;
-
+    infoPrice.classList.remove("d-none")
+    infoPrice.classList.add("text-center")
+    infoPrice.innerHTML = `<h3>Prix ${priceX10} 🍪</h3><br/>
+                          <h5>Multiplie par 10 chaque cookie recuperé</h5>`;
 })
 buttonX10.addEventListener('mouseout', () => {
-    infoBox.classList.remove('text-center');
-    infoBox.innerHTML = `<span>
-                Statistique :
-            </span> <br/>
-            <span>
-                Total des cookies gagnés: <span id="print-box-win">0</span>
-            </span> <br/>
-            <span>
-                Total des cookies dépensés: <span id="print-box-loose">0</span>
-            </span> <br/>`;
+    infoPrice.classList.add("d-none");
 })
-
 // bonus
 buttonBonus.addEventListener('mouseover', () => {
-    infoBox.classList.add("text-center")
-    infoBox.innerHTML = `<h1>Prix ${priceBonus} 🍪</h1><br/>
+    infoPrice.classList.remove("d-none");
+    infoPrice.classList.add("text-center");
+    infoPrice.innerHTML = `<h3>Prix ${priceBonus} 🍪</h3><br/>
                           <h5>Multiplie par 200 chaque cookie recuperé pendant 30 secondes</h5>`;
-
 })
 buttonBonus.addEventListener('mouseout', () => {
-    infoBox.classList.remove('text-center');
-    infoBox.innerHTML = `<span>
-                Statistique :
-            </span> <br/>
-            <span>
-                Total des cookies gagnés: <span id="print-box-win">0</span>
-            </span> <br/>
-            <span>
-                Total des cookies dépensés: <span id="print-box-loose">0</span>
-            </span> <br/>`;
+    infoPrice.classList.add("d-none");
 })
-
 //auto-click
 buttonAuto.addEventListener('mouseover', () => {
-    infoBox.classList.add("text-center")
-    infoBox.innerHTML = `<h1>Prix ${priceAutoclicker} 🍪</h1><br/>
-                          <h3>Clique a votre place toute les secondes</h3>`;
-
+    infoPrice.classList.remove("d-none");
+    infoPrice.classList.add("text-center");
+    infoPrice.innerHTML = `<h3>Prix ${priceAutoclicker} 🍪</h3><br/>
+                          <h5>Clique a votre place toute les secondes</h5>`;
 })
 buttonAuto.addEventListener('mouseout', () => {
-    infoBox.classList.remove('text-center');
-    infoBox.innerHTML = `<span>
-                Statistique :
-            </span> <br/>
-            <span>
-                Total des cookies gagnés: <span id="print-box-win">0</span>
-            </span> <br/>
-            <span>
-                Total des cookies dépensés: <span id="print-box-loose">0</span>
-            </span> <br/>`;
+    infoPrice.classList.add("d-none");
 })
+//autre
+
+buttonCookie.setAttribute("src", "./assets/img/cookie.png");
