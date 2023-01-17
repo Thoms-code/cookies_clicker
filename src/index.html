@@ -8,24 +8,48 @@
     <title>Cookies Clicker</title>
 </head>
 <body>
-    <main class="container col-6 bg-danger py-4 px-3 mx-auto">
+    <main>
+        <div class="container mt-5">
+            <h1 class="title text-center mx-auto"><span id="autoclicker"></span> Cookie <span id="title_disabled">clicker </span>!</h1>
+        </div>
+        <div class="container col-10">
+            <input type="image" class="w-100" id="button-cookie" src="./assets/img/cookie.png"  alt="main cookies"/>
+        </div>
+        <div class="container text-center">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                        <button type="button" class="btn btn-primary">1</button>
+                        <button type="button" class="btn btn-primary">1</button>
+                        <button type="button" class="btn btn-primary">1</button>
+                    </ul>
+                </div>
+            <div class="btn-group mx-auto" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">1</button>
+                <button type="button" class="btn btn-primary">2</button>
 
-        <input type="text" id="autoclicker" name="autoclicker"/>
-        <h1>Cookies clicker!</h1>
-        <section class="left_container">
-            <button id="button-autoclicker"><i class="fa-solid fa-arrow-pointer"></i></button>
-        </section>
-        <section class="main_container">
-            <input type="image" id="button-cookie" src="./img/cookie.png" width="150px"  alt="main cookies"/>
-            <button id="button-bonus">bonus</button>
-        </section>
-        <section class="right_container">
-            <button id="button-x2">x2</button>
-            <button id="button-x5">x5</button>
-            <button id="button-x10">x10</button>
-        </section>
+            </div>
+        </div>
     </main>
-
     <script type="module" src="./js/main.js"></script>
 </body>
 </html>
+<!--    <main class="container row col-12 col-sm-10 py-4 px-3 mx-auto">-->
+<!--        <h1 class="title text-center mx-auto"><span id="autoclicker"></span> Cookie <span id="title_disabled">clicker </span>!</h1>-->
+<!--        <article class="row mx-auto">-->
+<!--            <section class="left_container col-3 text-center">-->
+<!--                <button class="btn btn-outline rounded-circle" id="button-autoclicker"><i class="fa-solid fa-arrow-pointer fa-2x"></i></button>-->
+<!--            </section>-->
+<!--            <section class="main_container col-5 text-center">-->
+<!--                <input type="image" id="button-cookie" src="./img/cookie.png"  alt="main cookies"/>-->
+<!--                <button class="btn btn-outline rounded-3 p-1" id="button-bonus">BONUS</button>-->
+<!--            </section>-->
+<!--            <section class="right_container col-3">-->
+<!--                <button class="btn btn-outline rounded-circle " id="button-x2">x2</button>-->
+<!--                <button class="btn btn-outline rounded-circle " id="button-x5">x5</button>-->
+<!--                <button class="btn btn-outline rounded-circle " id="button-x10">x10</button>-->
+<!--            </section>-->
+<!--        </article>-->
+<!--    </main>-->

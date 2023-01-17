@@ -7,13 +7,14 @@
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
 // Google Fonts
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&family=Rowdies&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans&family=Poppins&family=Rowdies&display=swap");
 
 // VARIABLES
 // Fonts
 $noto: 'Noto Sans', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $rowdies: 'Rowdies', cursive;
+$bungee: 'Bungee', cursive;
 
 // SCSS
 
@@ -24,19 +25,18 @@ $rowdies: 'Rowdies', cursive;
 
 }
 body {
-  display: flex;
   margin: 0 auto;
-  background-color: #264653;
-  h1 {
-    color: #e9c46a;
-    font-family: $rowdies;
-    font-size: 5rem;
+  background-image: url("../assets/img/background_mobile.jpg");
+  background-size: cover;
+  font-family: $bungee;
+  .container {
+    .title {
+      color: #ffce00;
+      font-size: 2em;
+      text-shadow: #000000 2px 2px 0px,;
+    }
+    #button-cookie {
+
+    }
   }
-}
-#autoclicker {
-  background: transparent;
-  font-family: $rowdies;
-  color: #e9c46a;
-  border: none;
-  font-size: 5rem;
 }
