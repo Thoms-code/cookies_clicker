@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
     "preview": "vite preview",
-    "pages": "gh-pages -d dist"
+    "pages": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
