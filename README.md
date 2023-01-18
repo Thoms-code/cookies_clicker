@@ -19,6 +19,14 @@
 > v0.0.2
 > - Resolve conflict in bootstrap
 
+### Features to implement
+ >  Add hints/ Tutorial
+ >  Add Notification( No alerts) center that includes notification for:
+	- Each action action that was taken 
+	- Cookies spent
+ >  Add side bar with action history
+ >  Add reset button + reset notification
+
 ## Mission objectives
 
 At the end of this challenge you should have improved your:
