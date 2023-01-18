@@ -13,7 +13,7 @@ let multiplier = 1; // sera modifié en fonction du bonus (par defaut 1)
 let priceX2 = 5;
 let priceX5 = 10;
 let priceX10 = 50;
-let priceUnblockPanel = 500;
+let priceUnblockPanel = 1;
 let priceBonus = 600;
 let priceAutoclicker = 550;
 
