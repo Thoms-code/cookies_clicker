@@ -7,13 +7,12 @@
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
 // Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&family=Rowdies&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans&family=Poppins&family=Rowdies&display=swap");
 
 // VARIABLES
 // Fonts
-$noto: 'Noto Sans', sans-serif;
-$poppins: 'Poppins', sans-serif;
-$rowdies: 'Rowdies', cursive;
+$bungee: 'Bungee', cursive;
+$ibm_plex_mono: 'IBM Plex Mono', monospace;
 
 // SCSS
 
@@ -24,12 +23,33 @@ $rowdies: 'Rowdies', cursive;
 
 }
 body {
-  display: flex;
   margin: 0 auto;
-  background-color: #264653;
-  h1 {
-    color: #e9c46a;
-    font-family: $rowdies;
-    font-size: 5rem;
+  background-image: url("../assets/img/background_desktop.png");
+  background-size: 100%;
+  font-family: $bungee;
+  overflow: hidden;
+  .container {
+    .title {
+      color: #ffce00;
+      font-size: 2em;
+      text-shadow: 2px 2px 0 #000000;
+    }
+    #button-cookie {
+
+    }
   }
+}
+
+#info_box , #info_price {
+  background-color: rgb(0, 0, 0, 0.5);
+  font-size: 0.7em;
+  border: solid white 1px;
+  font-family: $ibm_plex_mono;
+  font-weight: bold;
+}
+@media only screen and (min-width: 640px) { 
+  body {
+    background: linear-gradient(0deg, rgba(9,158,198,1) 0%, rgba(11,168,207,1) 53%, rgba(8,154,195,1) 98%);
+    background:  url("../assets/img/background_mobile.jpg") no-repeat top rgb(9, 158, 198) ;
+}
 }

@@ -1,6 +1,7 @@
 const path = require('path')
 
 export default {
+    base: "/cookies_clicker",
     root: path.resolve(__dirname, 'src'),
     resolve: {
         alias: {
