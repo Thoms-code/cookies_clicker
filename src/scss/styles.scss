@@ -11,9 +11,6 @@
 
 // VARIABLES
 // Fonts
-$noto: 'Noto Sans', sans-serif;
-$poppins: 'Poppins', sans-serif;
-$rowdies: 'Rowdies', cursive;
 $bungee: 'Bungee', cursive;
 $ibm_plex_mono: 'IBM Plex Mono', monospace;
 
@@ -27,7 +24,7 @@ $ibm_plex_mono: 'IBM Plex Mono', monospace;
 }
 body {
   margin: 0 auto;
-  background-image: url("../assets/img/background_mobile.jpg");
+  background-image: url("../assets/img/background_desktop.png");
   background-size: 100%;
   font-family: $bungee;
   overflow: hidden;
