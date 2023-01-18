@@ -1,5 +1,7 @@
 # :cookie: Cookie Clicker
 
+gh-pages link: https://thoms-code.github.io/cookies_clicker/
+
 - Repository: `Javascript`
 - Type of Challenge: `Consolidation`
 - Duration: `5 days`
