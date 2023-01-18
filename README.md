@@ -21,6 +21,14 @@ gh-pages link: https://thoms-code.github.io/cookies_clicker/
 > v0.0.2
 > - Resolve conflict in bootstrap
 
+### Features to implement
+ >  Add hints/ Tutorial
+ >  Add Notification( No alerts) center that includes notification for:
+	- Each action action that was taken 
+	- Cookies spent
+ >  Add side bar with action history
+ >  Add reset button + reset notification
+
 ## Mission objectives
 
 At the end of this challenge you should have improved your:
@@ -145,12 +153,12 @@ This game allows you to collect cookies. Each click grants you a cookie. You can
 Why not ? I mean everybody loves cookies. It was our teams goal to end world's hunger by giving away cookies. Since we currently dont posses the financial resources to distribute cookies around the world, we aimed for a more realistic goal : Giving away numerical cookies online.
 The whole humanity consciousness will soon be uploaded online, so you might as well start collecting our delicious online cookies.
 
-
-### It's amazing! How did you do it ?
+## It's amazing! How did you do it ?
 We mainly used HTML to display the elements of this page. CSS was handled by bootstrap to make sure each element is displayed  where we wanted it to be displayed.JavaScript allowed back-end calculation and tracking of the cookies given. Since we chose to use bootstrap , we had to use a tool compatible with bootstrap to set up our local host. Vite was the answer! We had a few issues setting it up, but when it was set up it worked like a charm.
 
 
-![cookies](./src/img/cookie2.png)
+
+[cookies](/src/img/cookie2.png)
 Thank you for reading
 
 Copyright © January 2023, [FizaKhan2511](https://github.com/FizaKhan2511)/[Thoms-code](https://github.com/Thoms-code)/[merveil1](https://github.com/merveil1), @Becode, Brussels, Belgium
