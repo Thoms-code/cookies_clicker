@@ -7,7 +7,8 @@
     "start": "vite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pages": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
   "homepage": "https://github.com/Thoms-code/cookies_clicker#readme",
   "devDependencies": {
     "sass": "^1.57.1",
-    "vite": "^4.0.4"
+    "vite": "^4.0.4",
+    "gh-pages": "^4.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
