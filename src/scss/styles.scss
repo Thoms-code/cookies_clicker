@@ -47,3 +47,9 @@ body {
   font-family: $ibm_plex_mono;
   font-weight: bold;
 }
+@media only screen and (min-width: 640px) { 
+  body {
+    background: linear-gradient(0deg, rgba(9,158,198,1) 0%, rgba(11,168,207,1) 53%, rgba(8,154,195,1) 98%);
+    background:  url("../assets/img/background_mobile.jpg") no-repeat top rgb(9, 158, 198) ;
+}
+}
